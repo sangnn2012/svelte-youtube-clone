@@ -11,7 +11,7 @@
         <p class="text-gray-600 text-xs">Welcome to the channel, lets talk about stuffs</p>
     </div>
 
-    <button class="bg-black text-white text-sm ml-auto font-medium rounded-full p-1">
+    <button class="text-white text-sm bg-black font-medium rounded-full py-2 px-4">
         Subscribe
     </button>
 </a>
