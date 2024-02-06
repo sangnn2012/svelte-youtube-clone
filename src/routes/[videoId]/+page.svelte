@@ -1,6 +1,7 @@
 <script>
 	import ChannelInfo from "$lib/components/ChannelInfo.svelte";
     import VideoDescription from "$lib/components/VideoDescription.svelte";
+	import Comments from "$lib/components/Comments.svelte";
 
     let videoId = 'videoId';
 </script>
@@ -23,6 +24,8 @@
             <ChannelInfo />
 
             <VideoDescription />
+
+            <Comments />
         </div>
     </div>
 </div>
