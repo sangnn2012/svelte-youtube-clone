@@ -1,10 +1,16 @@
-<script>
+<script lang="ts">
     import './styles.css'
     import Header from '../lib/components/Header.svelte';
+	import SideBar from '../lib/components/SideBar.svelte';
 </script>
 
-<!-- Header apply to allp page -->
+<!-- Header apply to all page -->
 <Header />
-
+<div class="flex">
+    <SideBar />
+    <main class="ml-[74px] p-6">
+        <slot />
+    </main>
+</div>
 <!-- Content slot -->
-<slot/>
+<slot />
