@@ -16,21 +16,17 @@
     allowfullscreen
 />
 
-<div class="max-w-[1150px] px-2 w-full mx-auto">
+<div class="max-w-[1150px] px-2 w-full mx-auto py-2">
     <h1 class="capitalize text-xl font-semibold">
         sveltekit
     </h1>
 
-    <div class="flex flex-cols md:flex-row gap-5 items-start">
-        <div>
+    <div class="flex flex-col md:flex-row gap-10 items-start">
+        <div class="flex-1">
             <ChannelInfo />
-
             <VideoDescription />
-
             <Comments />
-
         </div>
         <RecommendedVideo />
-
     </div>
 </div>
