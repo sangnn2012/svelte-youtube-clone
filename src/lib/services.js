@@ -34,8 +34,9 @@ export const search = async ({ query, filters }) => {
 		// 		cursor: filters
 		// 	}
 		// });
-		return SAMPLE_VIDEO_LIST;
-		return result.data;
+		
+		// return result.data.contents;
+		return SAMPLE_SEARCH_RESULT;
 	} catch (error) {
 		console.error(error);
 	}
@@ -131,6 +132,63 @@ const SAMPLE_VIDEO_LIST = [
 			],
 			title: "🔴 LIVE! Phineas and Ferb Season 1 Full Episodes! | @disneyxd",
 			videoId: "Fjp2TdlTTIU"
+		}
+	}
+]
+
+const SAMPLE_SEARCH_RESULT = [
+	{
+		type: "video",
+		video: {
+			author: {
+				avatar: [
+					{
+						height: 68,
+						url: "https://yt3.ggpht.com/ytc/AIf8zZRut0Oh6UisLUcvp_TX9KtbKvfB5slTZ2SjkO3O=s68-c-k-c0x00ffffff-no-rj",
+						width: 68
+					}
+				],
+				badges: [
+					{
+						text: "Verified",
+						type: "VERIFIED_CHANNEL"
+					}
+				],
+				canonicalBaseUrl: "/@SmallCatYT",
+				channelId: "UCdIGk6ID4OvZLrPcCj1O7XA",
+				title: "SmallCat"
+			},
+			badges: [
+				"New"
+			],
+			descriptionSnippet: "offensive memes that are unusual We all love it , offensive memes. Today i have yet again made a dank meme compilation with ...",
+			isLiveNow: false,
+			lengthSeconds: 1316,
+			movingThumbnails: [
+				{
+					height: 180,
+					url: "https://i.ytimg.com/an_webp/yeH4ECAApMc/mqdefault_6s.webp?du=3000&sqp=CO_Jl64G&rs=AOn4CLBT20b5eqfbbuKoQRZL3zF5AgBV7A",
+					width: 320
+				}
+			],
+			publishedTimeText: "15 hours ago",
+			stats: {
+				views: 66280
+			},
+			thumbnails: [
+				{
+					height: 202,
+					url: "https://i.ytimg.com/vi/yeH4ECAApMc/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAFX_lYlygsnYXQHFb6SuxJEXDypA",
+					width: 360
+				},
+				{
+					height: 404,
+					url: "https://i.ytimg.com/vi/yeH4ECAApMc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLD8lu6OmYoOvyuc2I5gfhGZH5nqjg",
+					width: 720
+				}
+			],
+			title: "offensive memes that are unusual",
+			videoId: "yeH4ECAApMc"
 		}
 	}
 ]
