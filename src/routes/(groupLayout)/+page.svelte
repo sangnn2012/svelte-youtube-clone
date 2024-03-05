@@ -8,13 +8,13 @@
         {#if type === 'video'}
 
         <VideoCard
-            avatar={video.author.avatar?.[0].url}
-            publishTimeText={video.publishedTimeText}
-            thumbnail={video.thumbnails[0].url}
-            title={video.title}
-            videoId={video.videoId}
-            views={video.stats.viewers}
-            channelName={video.author.title}
+            avatar={video?.author?.avatar?.[0].url}
+            publishTimeText={video?.publishedTimeText}
+            thumbnail={video?.thumbnails[0]?.url}
+            title={video?.title}
+            videoId={video?.videoId}
+            views={video?.stats?.viewers}
+            channelName={video?.author?.title}
         />
         {/if}
     {/each}

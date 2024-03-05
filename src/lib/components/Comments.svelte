@@ -2,13 +2,12 @@
 	import CommentsCard from "./CommentsCard.svelte";
 
   export let commentsData;
-  console.log(`🚀 ~ commentsData:`, commentsData)
 </script>
 
 {#await commentsData}
   <p>comments loading....</p>
 {:then comments}
-  <h1 class="font-medium mb-5">{comments.totalCommentsCount} Comments</h1>
+  <h1 class="font-medium mb-5">{comments?.totalCommentsCount} Comments</h1>
   <div class="space-y-5">
     {#each comments.comments as comment}
       <CommentsCard

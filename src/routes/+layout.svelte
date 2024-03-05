@@ -1,7 +1,6 @@
 <script lang="ts">
 	import './styles.css';
 	import Header from '$lib/components/Header.svelte';
-	import Sidebar from '$lib/components/Sidebar.svelte';
 	import { afterNavigate, beforeNavigate } from '$app/navigation';
 	import NProgress from 'nprogress';
 	beforeNavigate(() => {
