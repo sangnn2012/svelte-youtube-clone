@@ -1,4 +1,6 @@
 <script>
+    import { formatLargeNumber } from "$lib/utils";
+
     export let title;
     export let publishTimeText;
     export let views;
@@ -29,8 +31,8 @@
             <h3 class="capitalize font-medium">{title}</h3>
             <p class="text-xm text-gray-500 mt-1">{channelName}</p>
             <div class="text-gray-600 text-sm"> 
-                <span class="text-xs text-gray-500">{views} Views</span>
-                <span class="text-xs text-gray-500">{publishTimeText?publishTimeText : ''}</span>
+                <span class="text-xs text-gray-500">{formatLargeNumber(views)} Views</span>
+                <span class="text-xs text-gray-500">{publishTimeText ? publishTimeText : ''}</span>
             </div>
         </div>
     </div>

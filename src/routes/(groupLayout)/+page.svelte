@@ -9,7 +9,7 @@
 
         <VideoCard
             avatar={video.author.avatar?.[0].url}
-            publishedTimeText={video.publishedTimeText}
+            publishTimeText={video.publishedTimeText}
             thumbnail={video.thumbnails[0].url}
             title={video.title}
             videoId={video.videoId}

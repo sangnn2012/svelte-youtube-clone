@@ -1,17 +1,20 @@
 <script>
+    export let name;
+    export let content;
+    export let avatar;
+    export let publishedTimeText;
 </script>
 
 <div class="flex gap-4">
-    <img alt="avatar" class="w-10 h-10 rounded-full" src="/avatar.png" />
+    <img alt="avatar" class="w-10 h-10 rounded-full" src={avatar} />
     <div class="space-y-2">
         <div class="flex items-baseline">
-            <h1 class="font-medium text-sm capitalize">User 1</h1>
-            <span class="text-gray-600 text-xs"> 12 hours ago</span>
+            <h1 class="font-medium text-sm capitalize">{name}</h1>
+            <span class="text-gray-600 text-xs">{publishedTimeText}</span>
         </div>
         
         <p class="text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec dui at nunc
-            tincidunt tincidunt
+            {content}
         </p>
 
         <div class="flex items-center gap-5">

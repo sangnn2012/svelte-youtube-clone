@@ -1,5 +1,5 @@
-<script lang="ts">
-    // import { formatLargeNumber } from "$lib/utils";
+<script>
+    import { formatLargeNumber } from "$lib/utils";
   
     export let avatar;
     export let publishedTimeText;
@@ -22,7 +22,7 @@
     <div class="text-gray-700">
       <h1 class="capitalize font-medium text-lg text-black">{title}</h1>
       <p class=" text-xs mb-1">
-        <!-- {formatLargeNumber(views)} views . {publishedTimeText} -->
+        {formatLargeNumber(views)} views . {publishedTimeText}
       </p>
       <div class="flex items-center gap-2 my-4">
         <img src={avatar} class="w-6 h-6 rounded-full" alt="" />

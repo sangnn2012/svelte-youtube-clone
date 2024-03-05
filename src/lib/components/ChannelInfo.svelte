@@ -1,14 +1,19 @@
 <script>
+	import { formatLargeNumber } from "$lib/utils";
 
+	export let name;
+	export let subscribersText;
+	export let avatar;
+	export let likes;
 </script>
 
 <div class="my-5 flex items-center justify-between">
     <div class="flex items-center gap-5">
         <div class="flex items-center gap-3">
-            <img src="/avatar.png" alt="avatar" class="w-10 h-10 rounded-full"/>
+            <img src={avatar} alt="avatar" class="w-10 h-10 rounded-full"/>
             <div>
-                <p class="font-medium capitalize">Channel name</p>
-                <p class="text-gray-700 text-xs">100000 subs</p>        
+                <p class="font-medium capitalize">{name}</p>
+                <p class="text-gray-700 text-xs">{subscribersText}</p>        
             </div>
         </div>
 
@@ -20,12 +25,11 @@
             <div class="divide-x-2 bg-gray-100 flex items-center overflow-hidden rounded-full">
                 <button class="hover:bg-gray-200 py-2 px-4 flex items-center gap-2">
                     <img src="/icons/likeIcon.svg" alt="thumbs-up" class="w-4 h-4"/>
-                    <span class="text-sm font-medium">3000</span>
+                    <span class="text-sm font-medium">{formatLargeNumber(likes)}</span>
                 </button>
 
                 <button class="hover:bg-gray-200 py-2 px-4 flex items-center gap-2">
                     <img src="/icons/dislikeIcon.svg" alt="thumbs-up" class="w-4 h-4"/>
-                    <span class="text-sm font-medium">3000</span>
                 </button>
             </div>
 
